@@ -1,0 +1,35 @@
+/* ================================================================ */
+/* CommonRule StyleSheet Definations(Since.1.0.0)                   */
+/* ================================================================ */
+/*#region 部品定義 */
+.text,
+.icon {
+	user-select:    none;
+	pointer-events: none;
+}
+/*#endregion 部品定義 */
+
+/*#region 配置定義 */
+.line,
+.cell {
+	display: flex;
+}
+
+.line {
+	flex-direction: column;
+}
+.cell {
+	flex-direction: row;
+}
+
+.line > .weight-0,
+.cell > .weight-0 {
+	flex-grow:   0;
+	flex-shrink: 0;
+}
+.line > .weight-1,
+.cell > .weight-1 {
+	flex-grow:   1;
+	flex-shrink: 1;
+}
+/*#endregion 配置定義 */
