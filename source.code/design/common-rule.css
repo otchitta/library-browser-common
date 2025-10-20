@@ -1,6 +1,12 @@
 /* ================================================================ */
 /* CommonRule StyleSheet Definations(Since.1.0.0)                   */
 /* ================================================================ */
+/*#region 基本定義 */
+html.line:has(body.weight-1) {
+	height: 100%;
+}
+/*#endregion 基本定義 */
+
 /*#region 部品定義 */
 .text,
 .icon {
