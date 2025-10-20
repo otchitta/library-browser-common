@@ -1,0 +1,26 @@
+/* ================================================================ */
+/* ToggleRule StyleSheet Definations(Since.1.0.0)                   */
+/* ================================================================ */
+label.toggle-pane {
+	border-radius:    2px;
+	border-style:     solid;
+	border-width:     1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+label.toggle-pane > input[type="checkbox"].toggle-flag,
+label.toggle-pane > input[type="radio"   ].toggle-flag {
+	display: none;
+}
+
+label.toggle-pane,
+label.toggle-pane {
+	background-color: #FFFFFF;
+	border-color:     #888888;
+}
+label.toggle-pane:has(input[type="checkbox"]:checked),
+label.toggle-pane:has(input[type="radio"   ]:checked) {
+	background-color: #888888;
+	border-color:     #444444;
+}
