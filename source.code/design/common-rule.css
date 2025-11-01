@@ -2,7 +2,7 @@
 /* CommonRule StyleSheet Definations(Since.1.0.0)                   */
 /* ================================================================ */
 /*#region 基本定義 */
-html.line:has(body.weight-1) {
+html.pane:has(body.weight-1) {
 	height: 100%;
 }
 /*#endregion 基本定義 */
@@ -16,25 +16,25 @@ html.line:has(body.weight-1) {
 /*#endregion 部品定義 */
 
 /*#region 配置定義 */
-.line,
-.cell {
+.pane,
+.line {
 	display: flex;
 }
 
-.line {
+.pane {
 	flex-direction: column;
 }
-.cell {
+.line {
 	flex-direction: row;
 }
 
-.line > .weight-0,
-.cell > .weight-0 {
+.pane > .weight-0,
+.line > .weight-0 {
 	flex-grow:   0;
 	flex-shrink: 0;
 }
-.line > .weight-1,
-.cell > .weight-1 {
+.pane > .weight-1,
+.line > .weight-1 {
 	flex-grow:   1;
 	flex-shrink: 1;
 }
