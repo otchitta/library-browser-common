@@ -1,12 +1,6 @@
 /* ================================================================ */
 /* CommonRule StyleSheet Definations(Since.1.0.0)                   */
 /* ================================================================ */
-/*#region 基本定義 */
-html.pane:has(body.weight-1) {
-	height: 100%;
-}
-/*#endregion 基本定義 */
-
 /*#region 部品定義 */
 .text,
 .icon {
@@ -27,7 +21,9 @@ html.pane:has(body.weight-1) {
 .line {
 	flex-direction: row;
 }
+/*#endregion 配置定義 */
 
+/*#region 領域定義 */
 .pane > .weight-0,
 .line > .weight-0 {
 	flex-grow:   0;
@@ -38,4 +34,8 @@ html.pane:has(body.weight-1) {
 	flex-grow:   1;
 	flex-shrink: 1;
 }
-/*#endregion 配置定義 */
+
+html.pane:has(body.weight-1) {
+	height: 100%;
+}
+/*#endregion 領域定義 */
