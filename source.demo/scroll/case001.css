@@ -1,0 +1,21 @@
+/* ================================================================ */
+/* Example001 StyleSheet Definations                                */
+/* ================================================================ */
+input {
+	width: 4em;
+}
+
+#frameH,
+#frameB {
+	white-space: nowrap;
+}
+
+.scroll-pane {
+	background-color: #FFDDDD;
+}
+#frameH {
+	background-color: #FFFFDD;
+}
+#frameB {
+	background-color: #DDFFDD;
+}

@@ -1,0 +1,23 @@
+/* ================================================================ */
+/* ScrollPane StyleSheet Definations(Since.1.0.0)                   */
+/* ================================================================ */
+/*#region 共通定義 */
+.scroll-pane {
+	display:        flex;
+	flex-direction: column;
+}
+/*#endregion 共通定義 */
+
+/*#region 領域定義 */
+.scroll-pane > .scroll-head {
+	flex-grow:   0;
+	flex-shrink: 0;
+	overflow:    hidden;
+}
+.scroll-pane > .scroll-body {
+	flex-grow:   1;
+	flex-shrink: 1;
+	overflow:    auto;
+	height:      0px;
+}
+/*#endregion 領域定義 */
